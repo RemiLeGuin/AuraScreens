@@ -24,7 +24,7 @@
         <name>AuraDefinitionBundle</name>
     </types>
     <types>
-        <members>InjectPoints</members>
+        <members>InjectPoint</members>
         <members>InjectTicket</members>
         <name>StaticResource</name>
     </types>
