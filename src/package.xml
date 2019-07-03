@@ -1,35 +1,31 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Package xmlns="http://soap.sforce.com/2006/04/metadata">
     <types>
-        <members>*</members>
+        <members>DM001_Store</members>
+        <members>DM002_Currency</members>
+        <members>LCC001_PointInjection</members>
+        <members>LCC002_TicketInjection</members>
         <name>ApexClass</name>
     </types>
     <types>
-        <members>*</members>
-        <name>ApexComponent</name>
-    </types>
-    <types>
-        <members>*</members>
-        <name>ApexPage</name>
-    </types>
-    <types>
-        <members>*</members>
-        <name>ApexTestSuite</name>
-    </types>
-    <types>
-        <members>*</members>
-        <name>ApexTrigger</name>
-    </types>
-    <types>
-        <members>*</members>
+        <members>LA001_PointInjection</members>
+        <members>LA002_TicketInjection</members>
+        <members>LC001_PointInjection</members>
+        <members>LC002_TicketInjection</members>
+        <members>LC003_HeaderWithTitleCardCodeName</members>
+        <members>LC004_StoreLookup</members>
+        <members>LC005_PointInjectionReasonsCombobox</members>
+        <members>LC006_PointCounter</members>
+        <members>LC007_DateInput</members>
+        <members>LC008_PriceInputWithCurrency</members>
+        <members>LE001_InjectionReasonChange</members>
+        <members>LE002_FormSubmission</members>
+        <members>LE003_FormSubmissionFromInput</members>
         <name>AuraDefinitionBundle</name>
     </types>
     <types>
-        <members>*</members>
-        <name>LightningComponentBundle</name>
-    </types>
-    <types>
-        <members>*</members>
+        <members>InjectPoints</members>
+        <members>InjectTicket</members>
         <name>StaticResource</name>
     </types>
     <version>45.0</version>
