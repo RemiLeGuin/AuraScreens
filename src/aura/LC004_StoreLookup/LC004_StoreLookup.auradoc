@@ -1,0 +1,4 @@
+<aura:documentation>
+	<aura:description>Pass a Contact's ID to the component to allow user to search for stores within customer's country.</aura:description>
+    <aura:example name="LC004_StoreLookup" ref="c:LC004_StoreLookup" label="Store lookup"/>
+</aura:documentation>

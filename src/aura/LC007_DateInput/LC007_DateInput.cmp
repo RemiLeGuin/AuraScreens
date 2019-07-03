@@ -1,0 +1,27 @@
+<aura:component>
+    
+    <aura:attribute name="recordId" type="String" description="Optional. Contact's ID in order to get the customer's birthdate. If informed, ticket date cannot be set before the customer's birthdate."/>
+    <aura:attribute name="simpleRecord" type="Account" access="private" description="Contact's target fields from force:recordData."/>
+    <aura:attribute name="ticketDate" type="String" description="Ticket date informed in the input."/>
+    <aura:attribute name="ticketDateOk" type="Boolean" default="false" description="Tell if the informed ticket date is valid."/>
+    <aura:attribute name="placeholder" type="String" access="private" description="Tell the user which date format is expected."/>
+    <aura:attribute name="today" type="Date" access="private" description="Today's date. The ticket date cannot be set after this date."/>
+    <aura:handler name="init" action="{!c.doInit}" value="{!this}"/>
+    <aura:handler event="c:LE002_FormSubmission" action="{!c.handleFormSubmission}" description="Listen if the form in which this component is used is submitted so it can check the input's validity."/>
+    <aura:registerEvent name="formSubmissionFromInput" type="c:LE003_FormSubmissionFromInput" description="Fires if the user presses 'Enter' key in the input to inform the parent component to submit a form."/>
+    
+    <force:recordData recordId="{!v.recordId}"
+                      targetFields="{!v.simpleRecord}"
+                      fields="Birthdate"/>
+    
+    <div class="slds-form-element">
+        <span onkeydown="{!c.handleKeyDown}">
+            <lightning:input aura:id="date-input" type="date" label="Ticket Date" dateStyle="short" value="{!v.ticketDate}"
+                             required="true" placeholder="{!v.placeholder}"
+                             min="{!v.simpleRecord.Birthdate}" max="{!v.today}" onblur="{!c.handleBlur}"
+                             messageWhenBadInput="{!$Label.c.ErrorDate}" messageWhenValueMissing="{!$Label.c.ErrorDate}"
+                             messageWhenRangeOverflow="{!$Label.c.ErrorDate}" messageWhenRangeUnderflow="{!$Label.c.ErrorDate}"/>
+        </span>
+    </div>
+    
+</aura:component>

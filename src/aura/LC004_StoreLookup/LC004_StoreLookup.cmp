@@ -1,0 +1,85 @@
+<aura:component controller="DM001_Store">
+    
+    <aura:attribute name="recordId" type="String" default="" description="Optional. Contact's ID in order to get its loyalty country. If no ID is informed, all the stores from all countries are retrieved."/>
+    <aura:attribute name="simpleRecord" type="Account" access="private" description="Contact's target fields from force:recordData."/>
+    <aura:attribute name="store" type="String" default="Call Center" description="Store informed in the input."/>
+    <aura:attribute name="storeOk" type="Boolean" default="true" description="Tell if the informed store is valid."/>
+    
+    <aura:attribute name="stores" type="String[]" description="Do not inform. All stores from the customer's loyalty country, initialized during the component instanciation."/>
+    <aura:attribute name="suggestions" type="String[]" access="private" description="Suggestions displayed as the user types in the input."/>
+    <aura:attribute name="searching" type="Boolean" access="private" default="false" description="Indicates if the user is typing in the input."/>
+    <aura:attribute name="openMenu" type="Boolean" access="private" description="Indicates if the suggestion menu is displayed."/>
+    <aura:attribute name="focusIndex" type="Integer" access="private" description="Indicates which item is focused in the suggestion list."/>
+    <aura:attribute name="noResult" type="Boolean" access="private" default="false" description="Set to true if there is no result for the user's input."/>
+    
+    <aura:handler name="init" value="{!this}" action="{!c.onInit}"/>
+    <aura:handler name="change" value="{!v.focusIndex}" action="{!c.handleFocusIndexChange}"/>
+    <aura:handler event="c:LE002_FormSubmission" action="{!c.handleFormSubmission}" description="Listen if the form in which this component is used is submitted so it can check the input's validity."/>
+    <aura:registerEvent name="formSubmissionFromInput" type="c:LE003_FormSubmissionFromInput" description="Fires if the user presses 'Enter' key in the input to inform the parent component to submit a form."/>
+    
+    <force:recordData recordId="{!v.recordId}"
+                      targetFields="{!v.simpleRecord}"
+                      fields="MailingCountry"
+                      recordUpdated="{!c.handleRecordUpdate}"/>
+    
+    <div aura:id="form-element" class="slds-form-element slds-lookup">
+        
+        <label class="slds-form-element__label" for="lookup-input">
+            <abbr class="slds-required" title="required">*</abbr>
+            {!$Label.c.Store}
+        </label>
+        
+        <div class="slds-form-element__control">
+            <div class="slds-combobox_container">
+                <div aura:id="dropdown-trigger" class="slds-combobox slds-combobox__form-element slds-dropdown-trigger slds-dropdown-trigger_click slds-input-has-icon slds-input-has-icon_right" role="combobox">
+                    
+                    <div aura:id="pill-container" class="{!'slds-pill_container ' + if(v.searching, 'slds-hide', '')}">
+                        <span class="slds-pill slds-size_1-of-1">
+                            <lightning:icon class="slds-pill__icon_container" iconName="custom:custom24" size="small"/>
+                            <span class="slds-pill__label" title="Store">{!v.store}</span>
+                            <button id="pill-close-button" class="slds-button slds-button_icon slds-pill__remove" title="Remove"
+                                    onclick="{!c.handleClickOnPill}" onkeydown="{!c.handlePillKeyDown}">
+                                <lightning:icon iconName="utility:close" size="xx-small"/>
+                            </button>
+                        </span>
+                    </div>
+
+                    <input id="form-input" class="{!'slds-lookup__search-input slds-input ' + if(v.searching, '', 'slds-hide')}" type="text"
+                           name="Store" role="combobox" autocomplete="off" value="{!v.store}"
+                           onkeydown="{!c.handleInputKeyDown}" oninput="{!c.handleInput}" onkeyup="{!c.handleInputKeyUp}"/>
+                    <span class="{!'slds-icon_container slds-icon-utility-search slds-input__icon slds-input__icon_right ' + if(v.searching, '', 'slds-hide')}">
+                        <lightning:icon iconName="utility:search" size="x-small" alternativeText="Search"/>
+                    </span>
+
+                    <div aura:id="lookup-menu" class="slds-dropdown slds-dropdown_length-5 slds-dropdown_fluid" role="listbox">
+                        <ul aura:id="lookup-list" class="slds-listbox slds-listbox_vertical" role="listbox">
+                            <aura:iteration items="{!v.suggestions}" var="suggestion" indexVar="i">
+                                <li role="presentation" class="{!if(i == v.focusIndex, 'slds-has-focus', '')}"
+                                    data-index="{!i}" onmousedown="{!c.handleClickOnItem}">
+                                    <span class="slds-lookup__item-action slds-media slds-media_center" role="option">
+                                        <span class="slds-listbox__option-icon slds-media__figure slds-m-top_xxx-small slds-m-bottom_xxx-small slds-m-right_x-small">
+                                            <span class="slds-icon_container slds-icon_x-small">
+                                                <lightning:icon iconName="custom:custom24" size="x-small" alternativeText="Store"/>
+                                            </span>
+                                        </span>
+                                        <div class="slds-media__body slds-lookup__result-text">{!suggestion}</div>
+                                    </span>
+                                </li>
+                            </aura:iteration>
+                            <li role="presentation" class="{!if(v.noResult, '', 'slds-hide')}" data-index="{!i}">
+                                <span class="slds-lookup__item-action slds-media" role="option">
+                                    <div class="slds-media__body slds-lookup__result-text">{!$Label.c.NoResult}</div>
+                                </span>
+                            </li>
+                        </ul>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+        
+        <div aura:id="form-error" class="slds-form-element__help slds-hide">{!$Label.c.ErrorStore}</div>
+        
+    </div>
+    
+</aura:component>

@@ -1,0 +1,4 @@
+<aura:documentation>
+	<aura:description>Allow a user to inform a price in a specified currency.</aura:description>
+    <aura:example name="LC008_PriceInputWithCurrency" ref="c:LC008_PriceInputWithCurrency" label="Price input"/>
+</aura:documentation>

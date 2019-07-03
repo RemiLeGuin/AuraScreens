@@ -1,0 +1,37 @@
+<aura:component controller="DM002_Currency">
+    
+    <aura:attribute name="price" type="Double" description="Price informed in the input."/>
+    <aura:attribute name="priceOk" type="Boolean" default="false" description="Tell if the informed price is valid."/>
+    <aura:attribute name="currency" type="String" default="EUR" description="Currency in which the price must be entered. Set to Euro by default."/>
+    <aura:attribute name="currencies" type="List" access="private" description="Currencies available in the org, initialized with the component."/>
+    <aura:handler name="init" action="{!c.doInit}" value="{!this}"/>
+    <aura:handler event="c:LE002_FormSubmission" action="{!c.handleFormSubmission}" description="Listen if the form in which this component is used is submitted so it can check the input's validity."/>
+    <aura:registerEvent name="formSubmissionFromInput" type="c:LE003_FormSubmissionFromInput" description="Fires if the user presses 'Enter' key in the input to inform the parent component to submit a form."/>
+    
+    <div id="price-form-element" class="slds-form-element">
+        
+        <label class="slds-form-element__label" for="price-input">
+            <abbr class="slds-required" title="required">*</abbr>
+            {!$Label.c.Price}
+        </label>
+        
+        <div class="slds-form-element__control">
+            <div class="slds-grid">
+                <div class="slds-form-element slds-size_7-of-12">
+                    <input id="price-input" type="number" min="0" step=".01" value="{!v.price}"
+                           class="slds-input slds-input_counter slds-text-align_right slds-p-right_small"
+                           onchange="{!c.handleChange}" onblur="{!c.handleBlur}" onkeydown="{!c.handleKeyDown}"/>
+                </div>
+                <span class="slds-size_1-of-12"/>
+                <div class="slds-form-element slds-size_4-of-12">
+                    <lightning:combobox name="currency" variant="label-hidden" label="Currency" required="true"
+                                        value="{!v.currency}" options="{!v.currencies}"/>
+                </div>
+            </div>
+        </div>
+        
+        <div id="price-input-error" class="slds-form-element__help slds-hide">{!$Label.c.ErrorPrice}</div>
+        
+    </div>
+    
+</aura:component>

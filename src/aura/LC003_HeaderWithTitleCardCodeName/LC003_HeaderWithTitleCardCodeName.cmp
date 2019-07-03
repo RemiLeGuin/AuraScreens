@@ -1,0 +1,19 @@
+<aura:component>
+    
+    <aura:attribute name="title" type="String" required="true" default="Title" description="Title to display on top of the Header."/>
+    <aura:attribute name="recordId" type="String" description="Optional. Contact's ID to display its Name and Email."/>
+    <aura:attribute name="simpleRecord" type="Object" access="private" description="Contact's target fields from force:recordData."/>
+    
+    <force:recordData recordId="{!v.recordId}"
+                      targetFields="{!v.simpleRecord}"
+                      fields="Name, Email"/>
+    
+    <header class="slds-modal__header">
+        <div class="slds-text-heading_medium slds-m-bottom_medium">{!v.title}</div>
+        <aura:if isTrue="{!and(v.recordId != null, v.recordId != '')}">
+        	<p>{!v.simpleRecord.Name}</p>
+            <p>{!v.simpleRecord.Email}</p>
+        </aura:if>
+    </header>
+    
+</aura:component>

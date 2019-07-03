@@ -1,0 +1,4 @@
+<aura:documentation>
+	<aura:description>Counter allowing to set a number of points. The input changes its color if another input sets a reason for a point injection: green if it's a point addition, red if it's a point removal.</aura:description>
+    <aura:example name="LC006_PointCounter" ref="c:LC006_PointCounter" label="Point counter"/>
+</aura:documentation>

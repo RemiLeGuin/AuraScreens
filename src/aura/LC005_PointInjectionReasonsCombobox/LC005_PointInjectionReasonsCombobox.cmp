@@ -1,0 +1,14 @@
+<aura:component>
+    
+    <aura:attribute name="reason" type="String" description="Reason informed in the input. See the possible reasons in the controller."/>
+    <aura:attribute name="placeholder" type="String" access="private" description="Placeholder set on init in the controller."/>
+    <aura:attribute name="options" type="List" access="private" description="Options displayed in the combobox."/>
+    <aura:handler name="init" action="{!c.doInit}" value="{!this}"/>
+    <aura:handler event="c:LE002_FormSubmission" action="{!c.validateInput}" description="Listen if the form in which this component is used is submitted so it can check the input's validity."/>
+    <aura:registerEvent name="injectionReasonChange" type="c:LE001_InjectionReasonChange" description="Fires if reason is changed and inform which one was chosen."/>
+    
+    <lightning:combobox aura:id="form-element" name="reason" label="{!$Label.c.Reason}" required="true"
+                        placeholder="{!v.placeholder}" value="{!v.reason}" options="{!v.options}"
+                        onchange="{!c.handleReasonChange}" onblur="{!c.validateInput}"/>
+    
+</aura:component>

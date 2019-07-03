@@ -1,0 +1,4 @@
+<aura:documentation>
+	<aura:description>Picklist allowing to choose a reason for points injection.</aura:description>
+    <aura:example name="LC005_PointInjectionReasonsCombobox" ref="c:LC005_PointInjectionReasonsCombobox" label="Point injection reasons combobox"/>
+</aura:documentation>

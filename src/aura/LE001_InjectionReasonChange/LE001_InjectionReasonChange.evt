@@ -1,0 +1,3 @@
+<aura:event type="APPLICATION" description="Event firing on reason change for point injection.">
+    <aura:attribute name="reason" type="String" description="Reason for the point injection. See the possible reasons in the LC005's controller."/>
+</aura:event>

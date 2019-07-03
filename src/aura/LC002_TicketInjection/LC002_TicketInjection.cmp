@@ -1,0 +1,83 @@
+<aura:component implements="force:lightningQuickActionWithoutHeader,force:hasRecordId" controller="LCC002_TicketInjection">
+    
+    <aura:attribute name="recordId" type="String" required="true" default="" description="Contact's ID for the customer for whom to inject the ticket."/>
+    <aura:attribute name="simpleRecord" type="Object" access="private" description="Contact's target fields from force:recordData."/>
+    <aura:attribute name="ticketNumber" type="String" access="private" description="Ticket number to inject by the agent."/>
+    <aura:attribute name="store" type="String" access="private" default="Call Center" description="Store from which there shall be point injection. Set to Call Center by default."/>
+    <aura:attribute name="storeOk" type="Boolean" access="private" default="true" description="Tell if the informed store is valid."/>
+    <aura:attribute name="stores" type="String[]" access="private" description="All stores from the customer's loyalty country, initialized during the LC004_StoreLookup component instanciation."/>
+    <aura:attribute name="ticketDate" type="String" access="private" description="Ticket date to be filled by the agent."/>
+    <aura:attribute name="ticketDateOk" type="Boolean" access="private" default="true" description="Tell if the informed ticket date is valid."/>
+    <aura:attribute name="price" type="Double" access="private" description="Ticket price to be filled by the agent."/>
+    <aura:attribute name="priceOk" type="Boolean" access="private" default="true" description="Tell if the informed ticket price is valid."/>
+    <aura:attribute name="currency" type="String" access="private" default="EUR" description="Currency in which the price must be entered. Set to Euro by default."/>
+    <aura:attribute name="returnMessage" type="String" access="private" description="Message returned by Maxxing in case of error."/>
+    <aura:attribute name="serverProcess" type="Boolean" access="private" default="false" description="Indicates if the webservice is processing. Used to display the spinner or not."/>
+    
+    <aura:handler name="formSubmissionFromInput" event="c:LE003_FormSubmissionFromInput" action="{!c.handleSubmission}" description="Listen if the user presses 'Enter' key in a child component's input to submit the form."/>
+    <aura:registerEvent name="formSubmission" type="c:LE002_FormSubmission" description="Fires if the user submit the form to check child components' input validity."/>
+    
+    <aura:html tag="style">
+        .cuf-content {
+            padding: 0 0rem !important
+        }
+        .slds-modal__content {
+            overflow: initial !important
+        }
+        .slds-modal__content.slds-p-around--medium {
+            height: unset !important;
+            max-height: unset !important;
+            padding: 0rem !important;
+        }
+        button[title="close"] {
+            display: none
+        }
+    </aura:html>
+    
+    <force:recordData recordId="{!v.recordId}"
+                      targetFields="{!v.simpleRecord}"
+                      fields="Email"/>
+    
+    <lightning:buttonIcon iconName="utility:close"
+                          alternativeText="close"
+                          variant="bare-inverse"
+                          class="slds-modal__close"/>
+    
+    <div class="slds-is-relative">
+        
+        <c:LC003_HeaderWithTitleCardCodeName title="{!$Label.c.TicketInjection}" recordId="{!v.recordId}"/>
+        
+        <div class="slds-form slds-form_horizontal">
+            
+            <div class="slds-modal__content slds-p-around_large">
+                <span onkeydown="{!c.handleTicketNumberKeyDown}">
+                    <lightning:input aura:id="ticket-number-input" name="Ticket Number" label="{!$Label.c.TicketNumber}"
+                                     value="{!v.ticketNumber}" required="true" autocomplete="off"
+                                     onchange="{!c.handleTicketNumberChange}"/>
+                </span>
+                <c:LC004_StoreLookup recordId="{!v.recordId}" store="{!v.store}" storeOk="{!v.storeOk}" stores="{!v.stores}"/>
+                <c:LC007_DateInput recordId="{!v.recordId}" ticketDate="{!v.ticketDate}" ticketDateOk="{!v.ticketDateOk}"/>
+                <c:LC008_PriceInputWithCurrency price="{!v.price}" priceOk="{!v.priceOk}" currency="{!v.currency}"/>
+                <ui:message aura:id="message-output" title="{!$Label.c.Error}" severity="error" closable="true" class="slds-hide">
+                    {!v.returnMessage}
+                </ui:message>
+            </div>
+            
+            <footer class="slds-modal__footer">
+                <div class="slds-align_absolute-center">
+                    <lightning:button label="{!$Label.c.Cancel}" variant="neutral" onclick="{!c.handleCancel}"/>
+                    <div class="slds-p-left_xx-large">
+                        <lightning:button label="OK" variant="brand" onclick="{!c.handleSubmission}"/>
+                    </div>
+                </div>
+            </footer>
+            
+        </div>
+        
+        <aura:if isTrue="{!v.serverProcess}">
+            <lightning:spinner title="Loading" variant="brand" alternativeText="Loading"/>
+        </aura:if>
+        
+    </div>
+    
+</aura:component>
