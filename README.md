@@ -4,7 +4,7 @@ This repository contains the code for two modals to be used as quick actions in 
 
 -   Point Injection: allows to inject points on a loyalty card for the contact/customer which belongs to a store.
 
-![Point Injection](/images/InjectPoint.png)
+![Point Injection](/images/InjectPoints.png)
 
 -   Ticket Injection: allows to inject a sale ticket for the contact/customer in a given store.
 
