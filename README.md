@@ -16,8 +16,8 @@ Both screens respect standards practices of the Aura framework for Lightning Com
 
 ## Installation:
 
--   [Follow this link for Sandboxes](https://test.salesforce.com/packaging/installPackage.apexp?p0=04t1n000002aE7yAAE "https://test.salesforce.com/packaging/installPackage.apexp?p0=04t1n000002aE7yAAE")
--   [Follow this link for Production environments, Developer Editions and Trailhead Playgrounds](https://login.salesforce.com/packaging/installPackage.apexp?p0=04t1n000002aE7yAAE "https://login.salesforce.com/packaging/installPackage.apexp?p0=04t1n000002aE7yAAE")
+-   [Follow this link for Sandboxes](https://test.salesforce.com/packaging/installPackage.apexp?p0=04t1n000002aE83AAE "https://test.salesforce.com/packaging/installPackage.apexp?p0=04t1n000002aE83AAE")
+-   [Follow this link for Production environments, Developer Editions and Trailhead Playgrounds](https://login.salesforce.com/packaging/installPackage.apexp?p0=04t1n000002aE83AAE "https://login.salesforce.com/packaging/installPackage.apexp?p0=04t1n000002aE83AAE")
 
 ## Dataset insertion:
 
@@ -26,3 +26,5 @@ To insert a dataset of store to search for in the screens, execute the following
 ```
 sfdx force:data:tree:import --sobjecttreefiles dataset/Store__c.json --targetusername <your org's alias or username>
 ```
+
+or manually create 'Store' records.

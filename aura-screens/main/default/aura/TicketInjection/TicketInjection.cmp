@@ -58,13 +58,15 @@
                 <c:StoreLookup recordId="{!v.recordId}" store="{!v.store}" storeOk="{!v.storeOk}" stores="{!v.stores}"/>
                 <c:DateInput recordId="{!v.recordId}" ticketDate="{!v.ticketDate}" ticketDateOk="{!v.ticketDateOk}"/>
                 <c:PriceInputWithCurrency price="{!v.price}" priceOk="{!v.priceOk}" currency="{!v.currency}"/>
-                <ui:message aura:id="message-output" title="{!$Label.c.Error}" severity="error" closable="true" class="slds-hide">
-                    {!v.returnMessage}
-                </ui:message>
+                <div class="slds-p-bottom_x-small">
+                    <ui:message aura:id="message-output" title="{!$Label.c.Error}" severity="error" closable="true" class="slds-hide">
+                        {!v.returnMessage}
+                    </ui:message>
+                </div>
             </div>
             
             <footer class="slds-modal__footer">
-                <div class="slds-align_absolute-center">
+                <div class="slds-align_absolute-center slds-p-vertical_x-small">
                     <lightning:button label="{!$Label.c.Cancel}" variant="neutral" onclick="{!c.handleCancel}"/>
                     <div class="slds-p-left_xx-large">
                         <lightning:button label="OK" variant="brand" onclick="{!c.handleSubmission}"/>
