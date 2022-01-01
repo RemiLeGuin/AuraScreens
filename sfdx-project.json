@@ -2,10 +2,17 @@
     "namespace": "",
     "packageDirectories": [
         {
-            "path": "src",
-            "default": true
+            "path": "aura-screens",
+            "default": true,
+            "package": "AuraScreens",
+            "versionName": "ver 0.1",
+            "versionNumber": "0.1.0.NEXT"
         }
     ],
     "sfdcLoginUrl": "https://login.salesforce.com",
-    "sourceApiVersion": "46.0"
+    "sourceApiVersion": "53.0",
+    "packageAliases": {
+        "AuraScreens": "0Ho1n0000000051CAA",
+        "AuraScreens@0.1.0-1": "04t1n000002aE7tAAE"
+    }
 }

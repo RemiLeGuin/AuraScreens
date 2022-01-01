@@ -1,0 +1,4 @@
+<aura:documentation>
+	<aura:description>Pass a Contact's ID and a title to the component to display a header with a title and the customer's name and email address.</aura:description>
+    <aura:example name="HeaderWithTitleCardCodeName" ref="c:HeaderWithTitleCardCodeName" label="Header with title, card code and name"/>
+</aura:documentation>

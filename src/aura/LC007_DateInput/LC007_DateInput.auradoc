@@ -1,4 +1,0 @@
-<aura:documentation>
-	<aura:description>Allow a user to inform a date for a cashier's receipt. The date format depends on the user locale.</aura:description>
-    <aura:example name="LC007_DateInput" ref="c:LC007_DateInput" label="Date input"/>
-</aura:documentation>

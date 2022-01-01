@@ -1,7 +1,0 @@
-<aura:documentation>
-	<aura:description>
-        <p>Pass a Contact's ID to the component to display a ticket injection screen. This screen allows an agent to inject a cashier's receipt to a customer. It shall be used in a quick action modal. The points may be sent by Webservice.</p>
-        <p>The HTML tag in the beginning of the component is a workaround to style the component according to the quick action modal.</p>
-    </aura:description>
-    <aura:example name="LC002_TicketInjection" ref="c:LC002_TicketInjection" label="Ticket injection screen"/>
-</aura:documentation>

@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomLabels xmlns="http://soap.sforce.com/2006/04/metadata">
+    <labels>
+        <fullName>Cancel</fullName>
+        <categories>Injection</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Cancel</shortDescription>
+        <value>Cancel</value>
+    </labels>
+    <labels>
+        <fullName>ChooseOne</fullName>
+        <categories>Injection</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Choose one</shortDescription>
+        <value>Choose one...</value>
+    </labels>
+    <labels>
+        <fullName>CommercialGesture</fullName>
+        <categories>Injection</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Commercial gesture</shortDescription>
+        <value>Commercial gesture</value>
+    </labels>
+    <labels>
+        <fullName>Confirmation</fullName>
+        <categories>Injection</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Confirmation</shortDescription>
+        <value>Confirmation</value>
+    </labels>
+    <labels>
+        <fullName>Error</fullName>
+        <categories>Injection</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Error</shortDescription>
+        <value>Error</value>
+    </labels>
+    <labels>
+        <fullName>ErrorDate</fullName>
+        <categories>Injection</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Error Date</shortDescription>
+        <value>Complete this field with a date between the customer&apos;s subscription date and today.</value>
+    </labels>
+    <labels>
+        <fullName>ErrorPoints</fullName>
+        <categories>Injection</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Error Points</shortDescription>
+        <value>Complete this field with a non-decimal value between 1 and 1000.</value>
+    </labels>
+    <labels>
+        <fullName>ErrorPrice</fullName>
+        <categories>Injection</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Error Price</shortDescription>
+        <value>Complete this field with a positive number.</value>
+    </labels>
+    <labels>
+        <fullName>ErrorStore</fullName>
+        <categories>Injection</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Error Store</shortDescription>
+        <value>Choose an existing store among the suggestions.</value>
+    </labels>
+    <labels>
+        <fullName>NoResult</fullName>
+        <categories>Injection</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>No Result</shortDescription>
+        <value>No Result</value>
+    </labels>
+    <labels>
+        <fullName>PointInjection</fullName>
+        <categories>Injection</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Point Injection</shortDescription>
+        <value>Point Injection</value>
+    </labels>
+    <labels>
+        <fullName>PointInjectionConfirmation</fullName>
+        <categories>Injection</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Point Injection Confirmation</shortDescription>
+        <value>{0} points injected on contact {1}</value>
+    </labels>
+    <labels>
+        <fullName>PointRegularization</fullName>
+        <categories>Injection</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Point regularization</shortDescription>
+        <value>Point regularization</value>
+    </labels>
+    <labels>
+        <fullName>PointRemoval</fullName>
+        <categories>Injection</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Point removal</shortDescription>
+        <value>Point removal</value>
+    </labels>
+    <labels>
+        <fullName>PointRemovalConfirmation</fullName>
+        <categories>Injection</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Point Removal Confirmation</shortDescription>
+        <value>{0} points removed on contact {1}</value>
+    </labels>
+    <labels>
+        <fullName>PointTransfer</fullName>
+        <categories>Injection</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Point transfer</shortDescription>
+        <value>Point transfer</value>
+    </labels>
+    <labels>
+        <fullName>Points</fullName>
+        <categories>Injection</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Points</shortDescription>
+        <value>Points</value>
+    </labels>
+    <labels>
+        <fullName>Price</fullName>
+        <categories>Injection</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Price</shortDescription>
+        <value>Price</value>
+    </labels>
+    <labels>
+        <fullName>Reason</fullName>
+        <categories>Injection</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Reason</shortDescription>
+        <value>Reason</value>
+    </labels>
+    <labels>
+        <fullName>Store</fullName>
+        <categories>Injection</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Store</shortDescription>
+        <value>Store</value>
+    </labels>
+    <labels>
+        <fullName>TicketDate</fullName>
+        <categories>Injection</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Ticket Date</shortDescription>
+        <value>Ticket Date</value>
+    </labels>
+    <labels>
+        <fullName>TicketInjection</fullName>
+        <categories>Injection</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Ticket Injection</shortDescription>
+        <value>Ticket Injection</value>
+    </labels>
+    <labels>
+        <fullName>TicketInjectionConfirmation</fullName>
+        <categories>Injection</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Ticket Injection Confirmation</shortDescription>
+        <value>Ticket {0} injected on contact {1}</value>
+    </labels>
+    <labels>
+        <fullName>TicketNumber</fullName>
+        <categories>Injection</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Ticket Number</shortDescription>
+        <value>Ticket Number</value>
+    </labels>
+    <labels>
+        <fullName>WelcomeBonus</fullName>
+        <categories>Injection</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Welcome bonus</shortDescription>
+        <value>Welcome bonus</value>
+    </labels>
+</CustomLabels>

@@ -1,0 +1,23 @@
+{
+  "name": "aura-screens",
+  "version": "1.0.0",
+  "description": "This repository contains the code for two modals to be used as quick actions in Salesforce:",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/RemiLeGuin/aura-screens.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/RemiLeGuin/aura-screens/issues"
+  },
+  "homepage": "https://github.com/RemiLeGuin/aura-screens#readme",
+  "devDependencies": {
+    "prettier": "2.5.1",
+    "prettier-plugin-apex": "1.10.0"
+  }
+}
