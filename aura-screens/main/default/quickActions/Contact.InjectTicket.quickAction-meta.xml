@@ -3,7 +3,7 @@
     <height>460</height>
     <icon>InjectTicketIcon</icon>
     <label>Inject Ticket</label>
-    <lightningComponent>PointInjection</lightningComponent>
+    <lightningComponent>TicketInjection</lightningComponent>
     <optionsCreateFeedItem>false</optionsCreateFeedItem>
     <type>LightningComponent</type>
     <width>-100</width>

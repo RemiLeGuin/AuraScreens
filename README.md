@@ -16,8 +16,8 @@ Both screens respect standards practices of the Aura framework for Lightning Com
 
 ## Installation:
 
--   [Follow this link for Sandboxes](https://test.salesforce.com/packaging/installPackage.apexp?p0=04t1n000002aE7tAAE "https://test.salesforce.com/packaging/installPackage.apexp?p0=04t1n000002aE7tAAE")
--   [Follow this link for Production environments, Developer Editions and Trailhead Playgrounds](https://login.salesforce.com/packaging/installPackage.apexp?p0=04t1n000002aE7tAAE "https://login.salesforce.com/packaging/installPackage.apexp?p0=04t1n000002aE7tAAE")
+-   [Follow this link for Sandboxes](https://test.salesforce.com/packaging/installPackage.apexp?p0=04t1n000002aE7yAAE "https://test.salesforce.com/packaging/installPackage.apexp?p0=04t1n000002aE7yAAE")
+-   [Follow this link for Production environments, Developer Editions and Trailhead Playgrounds](https://login.salesforce.com/packaging/installPackage.apexp?p0=04t1n000002aE7yAAE "https://login.salesforce.com/packaging/installPackage.apexp?p0=04t1n000002aE7yAAE")
 
 ## Dataset insertion:
 
