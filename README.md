@@ -1,4 +1,4 @@
-# AuraScreens
+# Aura Screens
 
 This repository contains the code for two modals to be used as quick actions in Salesforce:
 
