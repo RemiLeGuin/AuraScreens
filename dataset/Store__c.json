@@ -1,0 +1,767 @@
+{
+    "records": [
+        {
+            "attributes": {
+                "type": "Store__c",
+                "referenceId": "Store__cRef1"
+            },
+            "Name": "London"
+        },
+        {
+            "attributes": {
+                "type": "Store__c",
+                "referenceId": "Store__cRef2"
+            },
+            "Name": "Berlin"
+        },
+        {
+            "attributes": {
+                "type": "Store__c",
+                "referenceId": "Store__cRef3"
+            },
+            "Name": "Paris"
+        },
+        {
+            "attributes": {
+                "type": "Store__c",
+                "referenceId": "Store__cRef4"
+            },
+            "Name": "Vienna"
+        },
+        {
+            "attributes": {
+                "type": "Store__c",
+                "referenceId": "Store__cRef5"
+            },
+            "Name": "Hamburg"
+        },
+        {
+            "attributes": {
+                "type": "Store__c",
+                "referenceId": "Store__cRef6"
+            },
+            "Name": "Warsaw"
+        },
+        {
+            "attributes": {
+                "type": "Store__c",
+                "referenceId": "Store__cRef7"
+            },
+            "Name": "Budapest"
+        },
+        {
+            "attributes": {
+                "type": "Store__c",
+                "referenceId": "Store__cRef8"
+            },
+            "Name": "Munich"
+        },
+        {
+            "attributes": {
+                "type": "Store__c",
+                "referenceId": "Store__cRef9"
+            },
+            "Name": "Milan"
+        },
+        {
+            "attributes": {
+                "type": "Store__c",
+                "referenceId": "Store__cRef10"
+            },
+            "Name": "Prague"
+        },
+        {
+            "attributes": {
+                "type": "Store__c",
+                "referenceId": "Store__cRef11"
+            },
+            "Name": "Brussels"
+        },
+        {
+            "attributes": {
+                "type": "Store__c",
+                "referenceId": "Store__cRef12"
+            },
+            "Name": "Stockholm"
+        },
+        {
+            "attributes": {
+                "type": "Store__c",
+                "referenceId": "Store__cRef13"
+            },
+            "Name": "Amsterdam"
+        },
+        {
+            "attributes": {
+                "type": "Store__c",
+                "referenceId": "Store__cRef14"
+            },
+            "Name": "Marseille"
+        },
+        {
+            "attributes": {
+                "type": "Store__c",
+                "referenceId": "Store__cRef15"
+            },
+            "Name": "Valencia"
+        },
+        {
+            "attributes": {
+                "type": "Store__c",
+                "referenceId": "Store__cRef16"
+            },
+            "Name": "Leeds"
+        },
+        {
+            "attributes": {
+                "type": "Store__c",
+                "referenceId": "Store__cRef17"
+            },
+            "Name": "Krakow"
+        },
+        {
+            "attributes": {
+                "type": "Store__c",
+                "referenceId": "Store__cRef18"
+            },
+            "Name": "Frankfurt"
+        },
+        {
+            "attributes": {
+                "type": "Store__c",
+                "referenceId": "Store__cRef19"
+            },
+            "Name": "Seville"
+        },
+        {
+            "attributes": {
+                "type": "Store__c",
+                "referenceId": "Store__cRef20"
+            },
+            "Name": "Zaragoza"
+        },
+        {
+            "attributes": {
+                "type": "Store__c",
+                "referenceId": "Store__cRef21"
+            },
+            "Name": "Palermo"
+        },
+        {
+            "attributes": {
+                "type": "Store__c",
+                "referenceId": "Store__cRef22"
+            },
+            "Name": "Athens"
+        },
+        {
+            "attributes": {
+                "type": "Store__c",
+                "referenceId": "Store__cRef23"
+            },
+            "Name": "Wroclaw"
+        },
+        {
+            "attributes": {
+                "type": "Store__c",
+                "referenceId": "Store__cRef24"
+            },
+            "Name": "Riga"
+        },
+        {
+            "attributes": {
+                "type": "Store__c",
+                "referenceId": "Store__cRef25"
+            },
+            "Name": "Glasgow"
+        },
+        {
+            "attributes": {
+                "type": "Store__c",
+                "referenceId": "Store__cRef26"
+            },
+            "Name": "Dusseldorf"
+        },
+        {
+            "attributes": {
+                "type": "Store__c",
+                "referenceId": "Store__cRef27"
+            },
+            "Name": "Dortmund"
+        },
+        {
+            "attributes": {
+                "type": "Store__c",
+                "referenceId": "Store__cRef28"
+            },
+            "Name": "Genoa"
+        },
+        {
+            "attributes": {
+                "type": "Store__c",
+                "referenceId": "Store__cRef29"
+            },
+            "Name": "Essen"
+        },
+        {
+            "attributes": {
+                "type": "Store__c",
+                "referenceId": "Store__cRef30"
+            },
+            "Name": "Leipzig"
+        },
+        {
+            "attributes": {
+                "type": "Store__c",
+                "referenceId": "Store__cRef31"
+            },
+            "Name": "Sheffield"
+        },
+        {
+            "attributes": {
+                "type": "Store__c",
+                "referenceId": "Store__cRef32"
+            },
+            "Name": "Gothenburg"
+        },
+        {
+            "attributes": {
+                "type": "Store__c",
+                "referenceId": "Store__cRef33"
+            },
+            "Name": "Malaga"
+        },
+        {
+            "attributes": {
+                "type": "Store__c",
+                "referenceId": "Store__cRef34"
+            },
+            "Name": "Bremen"
+        },
+        {
+            "attributes": {
+                "type": "Store__c",
+                "referenceId": "Store__cRef35"
+            },
+            "Name": "Dublin"
+        },
+        {
+            "attributes": {
+                "type": "Store__c",
+                "referenceId": "Store__cRef36"
+            },
+            "Name": "Dresden"
+        },
+        {
+            "attributes": {
+                "type": "Store__c",
+                "referenceId": "Store__cRef37"
+            },
+            "Name": "Vilnius"
+        },
+        {
+            "attributes": {
+                "type": "Store__c",
+                "referenceId": "Store__cRef38"
+            },
+            "Name": "Manchester"
+        },
+        {
+            "attributes": {
+                "type": "Store__c",
+                "referenceId": "Store__cRef39"
+            },
+            "Name": "The Hague"
+        },
+        {
+            "attributes": {
+                "type": "Store__c",
+                "referenceId": "Store__cRef40"
+            },
+            "Name": "Poznan"
+        },
+        {
+            "attributes": {
+                "type": "Store__c",
+                "referenceId": "Store__cRef41"
+            },
+            "Name": "Madrid"
+        },
+        {
+            "attributes": {
+                "type": "Store__c",
+                "referenceId": "Store__cRef42"
+            },
+            "Name": "Rome"
+        },
+        {
+            "attributes": {
+                "type": "Store__c",
+                "referenceId": "Store__cRef43"
+            },
+            "Name": "Cologne"
+        },
+        {
+            "attributes": {
+                "type": "Store__c",
+                "referenceId": "Store__cRef44"
+            },
+            "Name": "Zagreb"
+        },
+        {
+            "attributes": {
+                "type": "Store__c",
+                "referenceId": "Store__cRef45"
+            },
+            "Name": "Copenhagen"
+        },
+        {
+            "attributes": {
+                "type": "Store__c",
+                "referenceId": "Store__cRef46"
+            },
+            "Name": "Lodz"
+        },
+        {
+            "attributes": {
+                "type": "Store__c",
+                "referenceId": "Store__cRef47"
+            },
+            "Name": "Helsinki"
+        },
+        {
+            "attributes": {
+                "type": "Store__c",
+                "referenceId": "Store__cRef48"
+            },
+            "Name": "Rotterdam"
+        },
+        {
+            "attributes": {
+                "type": "Store__c",
+                "referenceId": "Store__cRef49"
+            },
+            "Name": "Bucharest"
+        },
+        {
+            "attributes": {
+                "type": "Store__c",
+                "referenceId": "Store__cRef50"
+            },
+            "Name": "Barcelona"
+        },
+        {
+            "attributes": {
+                "type": "Store__c",
+                "referenceId": "Store__cRef51"
+            },
+            "Name": "Sofia"
+        },
+        {
+            "attributes": {
+                "type": "Store__c",
+                "referenceId": "Store__cRef52"
+            },
+            "Name": "Birmingham"
+        },
+        {
+            "attributes": {
+                "type": "Store__c",
+                "referenceId": "Store__cRef53"
+            },
+            "Name": "Naples"
+        },
+        {
+            "attributes": {
+                "type": "Store__c",
+                "referenceId": "Store__cRef54"
+            },
+            "Name": "Turin"
+        },
+        {
+            "attributes": {
+                "type": "Store__c",
+                "referenceId": "Store__cRef55"
+            },
+            "Name": "Stuttgart"
+        },
+        {
+            "attributes": {
+                "type": "Store__c",
+                "referenceId": "Store__cRef56"
+            },
+            "Name": "Duisburg"
+        },
+        {
+            "attributes": {
+                "type": "Store__c",
+                "referenceId": "Store__cRef57"
+            },
+            "Name": "Liverpool"
+        },
+        {
+            "attributes": {
+                "type": "Store__c",
+                "referenceId": "Store__cRef58"
+            },
+            "Name": "Toulouse"
+        },
+        {
+            "attributes": {
+                "type": "Store__c",
+                "referenceId": "Store__cRef59"
+            },
+            "Name": "Palma de Mallorca"
+        },
+        {
+            "attributes": {
+                "type": "Store__c",
+                "referenceId": "Store__cRef60"
+            },
+            "Name": "Brno"
+        },
+        {
+            "attributes": {
+                "type": "Store__c",
+                "referenceId": "Store__cRef61"
+            },
+            "Name": "Plovdiv"
+        },
+        {
+            "attributes": {
+                "type": "Store__c",
+                "referenceId": "Store__cRef62"
+            },
+            "Name": "Galati"
+        },
+        {
+            "attributes": {
+                "type": "Store__c",
+                "referenceId": "Store__cRef63"
+            },
+            "Name": "Lyon"
+        },
+        {
+            "attributes": {
+                "type": "Store__c",
+                "referenceId": "Store__cRef64"
+            },
+            "Name": "Lisbon"
+        },
+        {
+            "attributes": {
+                "type": "Store__c",
+                "referenceId": "Store__cRef65"
+            },
+            "Name": "Edinburgh"
+        },
+        {
+            "attributes": {
+                "type": "Store__c",
+                "referenceId": "Store__cRef66"
+            },
+            "Name": "Antwerp"
+        },
+        {
+            "attributes": {
+                "type": "Store__c",
+                "referenceId": "Store__cRef67"
+            },
+            "Name": "Leicester"
+        },
+        {
+            "attributes": {
+                "type": "Store__c",
+                "referenceId": "Store__cRef68"
+            },
+            "Name": "Bratislava"
+        },
+        {
+            "attributes": {
+                "type": "Store__c",
+                "referenceId": "Store__cRef69"
+            },
+            "Name": "Florence"
+        },
+        {
+            "attributes": {
+                "type": "Store__c",
+                "referenceId": "Store__cRef70"
+            },
+            "Name": "Iasi"
+        },
+        {
+            "attributes": {
+                "type": "Store__c",
+                "referenceId": "Store__cRef71"
+            },
+            "Name": "Bochum"
+        },
+        {
+            "attributes": {
+                "type": "Store__c",
+                "referenceId": "Store__cRef72"
+            },
+            "Name": "Wuppertal"
+        },
+        {
+            "attributes": {
+                "type": "Store__c",
+                "referenceId": "Store__cRef73"
+            },
+            "Name": "Bielefeld"
+        },
+        {
+            "attributes": {
+                "type": "Store__c",
+                "referenceId": "Store__cRef74"
+            },
+            "Name": "Timisoara"
+        },
+        {
+            "attributes": {
+                "type": "Store__c",
+                "referenceId": "Store__cRef75"
+            },
+            "Name": "Mannheim"
+        },
+        {
+            "attributes": {
+                "type": "Store__c",
+                "referenceId": "Store__cRef76"
+            },
+            "Name": "Craiova"
+        },
+        {
+            "attributes": {
+                "type": "Store__c",
+                "referenceId": "Store__cRef77"
+            },
+            "Name": "Gdansk"
+        },
+        {
+            "attributes": {
+                "type": "Store__c",
+                "referenceId": "Store__cRef78"
+            },
+            "Name": "Bristol"
+        },
+        {
+            "attributes": {
+                "type": "Store__c",
+                "referenceId": "Store__cRef79"
+            },
+            "Name": "Murcia"
+        },
+        {
+            "attributes": {
+                "type": "Store__c",
+                "referenceId": "Store__cRef80"
+            },
+            "Name": "Tallinn"
+        },
+        {
+            "attributes": {
+                "type": "Store__c",
+                "referenceId": "Store__cRef81"
+            },
+            "Name": "Bologna"
+        },
+        {
+            "attributes": {
+                "type": "Store__c",
+                "referenceId": "Store__cRef82"
+            },
+            "Name": "Cardiff"
+        },
+        {
+            "attributes": {
+                "type": "Store__c",
+                "referenceId": "Store__cRef83"
+            },
+            "Name": "Bydgoszcz"
+        },
+        {
+            "attributes": {
+                "type": "Store__c",
+                "referenceId": "Store__cRef84"
+            },
+            "Name": "Varna"
+        },
+        {
+            "attributes": {
+                "type": "Store__c",
+                "referenceId": "Store__cRef85"
+            },
+            "Name": "Wigan"
+        },
+        {
+            "attributes": {
+                "type": "Store__c",
+                "referenceId": "Store__cRef86"
+            },
+            "Name": "Cluj-Napoca"
+        },
+        {
+            "attributes": {
+                "type": "Store__c",
+                "referenceId": "Store__cRef87"
+            },
+            "Name": "Nottingham"
+        },
+        {
+            "attributes": {
+                "type": "Store__c",
+                "referenceId": "Store__cRef88"
+            },
+            "Name": "Bradford"
+        },
+        {
+            "attributes": {
+                "type": "Store__c",
+                "referenceId": "Store__cRef89"
+            },
+            "Name": "Coventry"
+        },
+        {
+            "attributes": {
+                "type": "Store__c",
+                "referenceId": "Store__cRef90"
+            },
+            "Name": "Utrecht"
+        },
+        {
+            "attributes": {
+                "type": "Store__c",
+                "referenceId": "Store__cRef91"
+            },
+            "Name": "Lublin"
+        },
+        {
+            "attributes": {
+                "type": "Store__c",
+                "referenceId": "Store__cRef92"
+            },
+            "Name": "Wakefield"
+        },
+        {
+            "attributes": {
+                "type": "Store__c",
+                "referenceId": "Store__cRef93"
+            },
+            "Name": "Belfast"
+        },
+        {
+            "attributes": {
+                "type": "Store__c",
+                "referenceId": "Store__cRef94"
+            },
+            "Name": "Malmo"
+        },
+        {
+            "attributes": {
+                "type": "Store__c",
+                "referenceId": "Store__cRef95"
+            },
+            "Name": "Alicante"
+        },
+        {
+            "attributes": {
+                "type": "Store__c",
+                "referenceId": "Store__cRef96"
+            },
+            "Name": "Cordoba"
+        },
+        {
+            "attributes": {
+                "type": "Store__c",
+                "referenceId": "Store__cRef97"
+            },
+            "Name": "Thessaloniki"
+        },
+        {
+            "attributes": {
+                "type": "Store__c",
+                "referenceId": "Store__cRef98"
+            },
+            "Name": "Constanta"
+        },
+        {
+            "attributes": {
+                "type": "Store__c",
+                "referenceId": "Store__cRef99"
+            },
+            "Name": "Catania"
+        },
+        {
+            "attributes": {
+                "type": "Store__c",
+                "referenceId": "Store__cRef100"
+            },
+            "Name": "Szczecin"
+        },
+        {
+            "attributes": {
+                "type": "Store__c",
+                "referenceId": "Store__cRef101"
+            },
+            "Name": "Las Palmas"
+        },
+        {
+            "attributes": {
+                "type": "Store__c",
+                "referenceId": "Store__cRef102"
+            },
+            "Name": "Bonn"
+        },
+        {
+            "attributes": {
+                "type": "Store__c",
+                "referenceId": "Store__cRef103"
+            },
+            "Name": "Karlsruhe"
+        },
+        {
+            "attributes": {
+                "type": "Store__c",
+                "referenceId": "Store__cRef104"
+            },
+            "Name": "Hanover"
+        },
+        {
+            "attributes": {
+                "type": "Store__c",
+                "referenceId": "Store__cRef105"
+            },
+            "Name": "Nuremberg"
+        },
+        {
+            "attributes": {
+                "type": "Store__c",
+                "referenceId": "Store__cRef106"
+            },
+            "Name": "Bilbao"
+        },
+        {
+            "attributes": {
+                "type": "Store__c",
+                "referenceId": "Store__cRef107"
+            },
+            "Name": "Nice"
+        },
+        {
+            "attributes": {
+                "type": "Store__c",
+                "referenceId": "Store__cRef108"
+            },
+            "Name": "Bari"
+        },
+        {
+            "attributes": {
+                "type": "Store__c",
+                "referenceId": "Store__cRef109"
+            },
+            "Name": "Munster"
+        }
+    ]
+}
