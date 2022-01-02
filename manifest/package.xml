@@ -1,34 +1,63 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Package xmlns="http://soap.sforce.com/2006/04/metadata">
     <types>
-        <members>Store</members>
         <members>CurrencyIsoCodes</members>
+        <members>CurrencyIsoCodesTest</members>
         <members>PointInjection</members>
+        <members>PointInjectionTest</members>
+        <members>Store</members>
+        <members>StoreTest</members>
         <members>TicketInjection</members>
+        <members>TicketInjectionTest</members>
         <name>ApexClass</name>
     </types>
     <types>
-        <members>PointInjection</members>
-        <members>TicketInjection</members>
-        <members>PointInjection</members>
-        <members>TicketInjection</members>
-        <members>HeaderWithTitleCardCodeName</members>
-        <members>StoreLookup</members>
-        <members>PointInjectionReasonsCombobox</members>
-        <members>PointCounter</members>
         <members>DateInput</members>
-        <members>PriceInputWithCurrency</members>
-        <members>InjectionReasonChange</members>
         <members>FormSubmission</members>
         <members>FormSubmissionFromInput</members>
+        <members>HeaderWithTitleCardCodeName</members>
+        <members>InjectionReasonChange</members>
+        <members>PointCounter</members>
+        <members>PointInjection</members>
+        <members>PointInjectionApp</members>
+        <members>PointInjectionReasonsCombobox</members>
+        <members>PriceInputWithCurrency</members>
+        <members>StoreLookup</members>
+        <members>TicketInjection</members>
+        <members>TicketInjectionApp</members>
         <name>AuraDefinitionBundle</name>
     </types>
     <types>
-        <members>*</members>
-        <name>CustomLabels</name>
+        <members>Cancel</members>
+        <members>ChooseOne</members>
+        <members>CommercialGesture</members>
+        <members>Confirmation</members>
+        <members>Error</members>
+        <members>ErrorDate</members>
+        <members>ErrorPoints</members>
+        <members>ErrorPrice</members>
+        <members>ErrorStore</members>
+        <members>NoResult</members>
+        <members>PointInjection</members>
+        <members>PointInjectionConfirmation</members>
+        <members>PointRegularization</members>
+        <members>PointRemoval</members>
+        <members>PointRemovalConfirmation</members>
+        <members>PointTransfer</members>
+        <members>Points</members>
+        <members>Price</members>
+        <members>Reason</members>
+        <members>Store</members>
+        <members>TicketDate</members>
+        <members>TicketInjection</members>
+        <members>TicketInjectionConfirmation</members>
+        <members>TicketNumber</members>
+        <members>WelcomeBonus</members>
+        <name>CustomLabel</name>
     </types>
     <types>
-        <members>*</members>
+        <members>Contact.InjectPoints</members>
+        <members>Contact.InjectTicket</members>
         <name>QuickAction</name>
     </types>
     <types>
