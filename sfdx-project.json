@@ -12,11 +12,11 @@
     "sfdcLoginUrl": "https://login.salesforce.com",
     "sourceApiVersion": "53.0",
     "packageAliases": {
-        "AuraScreens": "0Ho1n0000000051CAA",
-        "AuraScreens@0.1.0-1": "04t1n000002aE7tAAE",
-        "AuraScreens@0.1.0-2": "04t1n000002aE7yAAE",
-        "AuraScreens@0.1.0-3": "04t1n000002aE83AAE",
-        "AuraScreens@1.0.0-1": "04t1n000002aE88AAE",
-        "AuraScreens@1.0.0-2": "04t1n000002aE8DAAU"
+        "Aura Screens": "0Ho1n0000000051CAA",
+        "Aura Screens@0.1.0-1": "04t1n000002aE7tAAE",
+        "Aura Screens@0.1.0-2": "04t1n000002aE7yAAE",
+        "Aura Screens@0.1.0-3": "04t1n000002aE83AAE",
+        "Aura Screens@1.0.0-1": "04t1n000002aE88AAE",
+        "Aura Screens@1.0.0-2": "04t1n000002aE8DAAU"
     }
 }
