@@ -17,6 +17,8 @@
     <aura:handler name="formSubmissionFromInput" event="c:FormSubmissionFromInput" action="{!c.handleSubmission}" description="Listen if the user presses 'Enter' key in a child component's input to submit the form."/>
     <aura:registerEvent name="formSubmission" type="c:FormSubmission" description="Fires if the user submit the form to check child components' input validity."/>
     
+    <!-- The lightningQuickActionWithoutHeader interface for Aura components allows to set custom header and footer.
+         However, it sets an ugly padding around the Aura component. The following code removes the padding.  -->
     <aura:html tag="style">
         .cuf-content {
             padding: 0 0rem !important

@@ -1,6 +1,6 @@
 ({
     setCurrencies: function(component) {
-        var action = component.get("c.getAllCurrenciesIsoCode");
+        var action = component.get("c.getAllCurrencyIsoCodes");
         action.setCallback(this, function(response) {
             var state = response.getState();
             if (state === "SUCCESS") {
